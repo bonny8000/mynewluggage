@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行李清單管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>行李清單管理</h1>
+
+        <div class="search-add-container">
+            <div class="add-item-form">
+                <select id="bag-select">
+                    <option value="貼身小物米黃袋">貼身小物米黃袋</option>
+                    <option value="助聽器米黃袋">助聽器米黃袋</option>
+                    <option value="灰色化妝包">灰色化妝包</option>
+                    <option value="米黃小束袋">米黃小束袋</option>
+                    <option value="中藍壓縮袋">中藍壓縮袋</option>
+                    <option value="大藍壓縮袋">大藍壓縮袋</option>
+                    <option value="黑大行李箱">黑大行李箱</option>
+                    <option value="藍大行李箱">藍大行李箱</option>
+                    <option value="中米黃袋">中米黃袋</option>
+                    <option value="大米黃袋">大米黃袋</option>
+                </select>
+                <input type="text" id="item-name" placeholder="物品名稱">
+                <input type="number" id="item-quantity" placeholder="數量" min="1">
+                <button onclick="addItem()">新增物品</button>
+            </div>
+
+            <div class="search-item-form">
+                <input type="text" id="search-name" placeholder="搜尋物品名稱">
+                <button onclick="searchItem()">搜尋</button>
+            </div>
+        </div>
+
+        <div id="bag-sections"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
